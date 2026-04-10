@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Moise MMT</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- 🔥 HERO -->
+    <section class="hero">
+
+        <!-- TEXTES EN HAUT -->
+        <div class="top-left">
+            BRANDING & UI/UX DESIGN <br>
+            Gones Legacy
+        </div>
+
+        <div class="top-center">
+            𝐌𝐨𝐳𝐚𝐫𝐭平和
+        </div>
+
+        <div class="top-right">
+            FUTUR PROJET <br>
+            <span>2026</span>
+        </div>
+
+        <!-- IMAGES -->
+        <div class="images">
+            <img src="assets/img/img1.jpg" alt="">
+            <img src="assets/img/img2.jpg" alt="">
+        </div>
+
+        <!-- TEXTE CENTRAL -->
+        <h1 class="title">
+            <span>MOISE</span><br>
+            <span>MMT</span>
+        </h1>
+
+        <!-- OVERLAY -->
+        <div class="overlay"></div>
+
+        <!-- GRAIN -->
+        <div class="grain"></div>
+
+    </section>
+
+    <!-- 💀 PROJECTS SECTION -->
+    <section class="projects">
+
+        <section class="projects">
+
+    <div class="project reveal">
+        <img src="assets/img/img1.jpg">
+        <h2>Urban Portrait</h2>
+    </div>
+
+    <div class="project reveal">
+        <img src="assets/img/img2.jpg">
+        <h2>Street Vision</h2>
+    </div>
+
+    <div class="project reveal">
+        <img src="assets/img/img1.jpg">
+        <h2>Minimal Mood</h2>
+    </div>
+
+    <div class="project reveal">
+        <img src="assets/img/img2.jpg">
+        <h2>𝐌𝐨𝐳𝐚𝐫𝐭平和</h2>
+    </div>
+
+</section>
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+    reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if(top < windowHeight - 100){
+            el.classList.add("active");
+        }
+    });
+});
+</script>
+</body>
+</html>
